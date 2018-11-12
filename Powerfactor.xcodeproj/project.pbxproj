@@ -15,6 +15,7 @@
 		3C9D3B6221860F38001B574E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9D3B6021860F38001B574E /* LaunchScreen.storyboard */; };
 		3C9D3B6D21860F38001B574E /* PowerfactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D3B6C21860F38001B574E /* PowerfactorTests.swift */; };
 		3C9D3B7821860F38001B574E /* PowerfactorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D3B7721860F38001B574E /* PowerfactorUITests.swift */; };
+		3C9D3B872187297D001B574E /* shots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9D3B862187297D001B574E /* shots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3C9D3B7321860F38001B574E /* PowerfactorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerfactorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9D3B7721860F38001B574E /* PowerfactorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerfactorUITests.swift; sourceTree = "<group>"; };
 		3C9D3B7921860F38001B574E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C9D3B862187297D001B574E /* shots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shots.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,7 @@
 		3C9D3B5321860F36001B574E /* Powerfactor */ = {
 			isa = PBXGroup;
 			children = (
-				3C9D3B5421860F36001B574E /* AppDelegate.swift */,
-				3C9D3B5621860F36001B574E /* ViewController.swift */,
+				3C9D3B8521872952001B574E /* source */,
 				3C9D3B5821860F36001B574E /* Main.storyboard */,
 				3C9D3B5E21860F38001B574E /* Assets.xcassets */,
 				3C9D3B6021860F38001B574E /* LaunchScreen.storyboard */,
@@ -126,6 +127,16 @@
 				3C9D3B7921860F38001B574E /* Info.plist */,
 			);
 			path = PowerfactorUITests;
+			sourceTree = "<group>";
+		};
+		3C9D3B8521872952001B574E /* source */ = {
+			isa = PBXGroup;
+			children = (
+				3C9D3B5421860F36001B574E /* AppDelegate.swift */,
+				3C9D3B5621860F36001B574E /* ViewController.swift */,
+				3C9D3B862187297D001B574E /* shots.swift */,
+			);
+			path = source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 				3C9D3B5721860F36001B574E /* ViewController.swift in Sources */,
 				3C9D3B5D21860F36001B574E /* Powerfactor.xcdatamodeld in Sources */,
 				3C9D3B5521860F36001B574E /* AppDelegate.swift in Sources */,
+				3C9D3B872187297D001B574E /* shots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +448,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB29B9EANM;
 				INFOPLIST_FILE = Powerfactor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +458,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = grg.Powerfactor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,7 +468,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NB29B9EANM;
 				INFOPLIST_FILE = Powerfactor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = grg.Powerfactor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
